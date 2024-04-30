@@ -96,9 +96,9 @@ DATABASES = {
     }
 }
 
-print("lplppppppppppppppppp")
 DB_URL = os.getenv('DB_URL')
-print(DB_URL)
+
+
 DATABASES['default'] = dj_database_url.parse(DB_URL)
 
 ALLOWED_HOSTS= os.getenv('ALLOWED_HOSTS').split(' ')
@@ -153,8 +153,12 @@ REST_FRAMEWORK = {
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
     "http://127.0.0.1:9000",
-    "http://10.42.0.149:3000"
+    "https://chatxt.netlify.app",
+    "wss://chatxt.netlify.app"
 ]
+
+CSRF_TRUSTED_ORIGINS = ['https://*.chatxt.netlify.app','https://*.chatx-k0cd.onrender.com/']
+
 
 CHANNEL_LAYERS = {
     "default": {
