@@ -6,6 +6,8 @@
 
 ### Frontend - `https://chatxt.netlify.app/`
 
+### frontend repo - `https://github.com/prabs222/ChatX-frontend`
+
 ## Project Setup
 
 Django \
